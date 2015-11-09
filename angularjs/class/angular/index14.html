@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" ng-app="MyApp"> <!-- MyApp value included for version 1.4 -->
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Demo</title>
+  <script src="lib/angular/angular.min.js"></script> <!-- angular.min.js = version 1.4 -->
+</head>
+<body>
+   <div ng-controller="MyController">
+      <h1>{{people.name}}</h1>
+	  <p>{{people.title + ', ' + people.course}}</p>
+   </div>
+   
+   <script>
+      angular.module('MyApp', []) // included for version 1.4 - creating a module
+	  
+      function MyController($scope) {
+         $scope.people = {
+	        'name' : 'Claudia Da Silva',
+		    'title' : 'Instructor',
+		    'course' : 'CNIT 133A'
+	     }
+      }
+
+       angular.module('MyApp').controller('MyController', MyController)	 // included for version 1.4 - registering controller to module 
+   </script>	  
+</body>
+</html>

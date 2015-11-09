@@ -1,0 +1,12 @@
+<section class="peopleinfo">
+      <div class="people cf" ng-model="people">
+            <a href="#more/{{prevItem}}" class="btn btn-left">&lt;</a>
+            <a href="#more/{{nextItem}}" class="btn btn-right">&gt;</a>
+            <h1>{{people[whichItem].name}}</h1>
+           <div class="info">
+                   <h3>{{people[whichItem].reknown}}</h3>
+                   <img ng-src="images/{{people[whichItem].shortname}}_tn.jpg" alt="Face picture of {{people[whichItem].name}}">
+                   <div class="bio">{{people[whichItem].bio}}</div>
+            </div>
+          <a href="index.html">&laquo; Back to search</a>
+</section>

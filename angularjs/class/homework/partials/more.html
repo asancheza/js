@@ -1,0 +1,13 @@
+ <section class="peoplepage">
+  <p>See more details about: 
+  <span ng-repeat="item in people | filter: query | orderBy: peopleOrder:direction">
+   <a class="people cf" href="#/prod{{people.indexOf(item)+1}}">Product {{people.indexOf(item)+1}}</a>
+  </span>
+</section>
+
+<section class="peopleinfo">
+	<div class="people cf" ng-model="people">
+	  <h1>{{people[whichItem].name}}</h1>
+	  <p>{{people[whichItem].description}}</p>
+	</div>
+</section>

@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Product 1",
+    "shortname":"prod1",
+    "description":"This is product 1 page."
+  },
+  {
+    "name":"Product 2",
+    "shortname":"prod2",
+    "description":"This is product 2 page."
+  },
+  {
+    "name":"Product 3",
+    "shortname":"prod3",
+    "description":"This is product 3 page."
+  },
+  {
+    "name":"Product 4",
+    "shortname":"prod4",
+    "description":"This is product 4 page."
+  }
+]
